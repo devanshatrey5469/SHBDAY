@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happiest Birthday Shipra 🎉</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="bgMusic" src="music.mp3" loop></audio>
+
+<canvas id="confetti"></canvas>
+<canvas id="fireworks"></canvas>
+<div id="balloons"></div>
+
+<div class="container">
+
+  <!-- SLIDE 1 -->
+  <div class="slide active">
+    <h1>Happy Birthday Shipra 🎂</h1>
+    <p class="emotional">
+      Some people don’t need to be close<br>
+      to make you feel supported.<br><br>
+      Today is a reminder of that.
+    </p>
+    <button class="arrow-btn" onclick="tapBlast(); nextSlide()">➜</button>
+  </div>
+
+  <!-- SLIDE 2 -->
+  <div class="slide">
+    <h2>🎵 Let the celebration begin</h2>
+    <p>
+      This is your day.<br>
+      Take a moment, smile,<br>
+      and enjoy what’s ahead ✨
+    </p>
+    <button class="arrow-btn" onclick="startMusic(); tapBlast(); nextSlide()">➜</button>
+  </div>
+
+  <!-- PHOTO 1 -->
+  <div class="slide">
+    <img src="photo1.jpg" class="big-photo">
+    <p class="message">
+      Your smile brings calm,<br>
+      and makes moments lighter.
+    </p>
+    <button class="arrow-btn" onclick="tapBlast(); nextSlide()">➜</button>
+  </div>
+
+  <!-- PHOTO 2 -->
+  <div class="slide">
+    <img src="photo2.jpg" class="big-photo">
+    <p class="message">
+      You carry strength quietly, and that’s rare.
+    </p>
+    <button class="arrow-btn" onclick="tapBlast(); nextSlide()">➜</button>
+  </div>
+
+  <!-- PHOTO 3 -->
+  <div class="slide">
+    <img src="photo3.jpg" class="big-photo">
+    <p class="message">
+      Wishing you happiness and good days ahead.
+    </p>
+    <button class="arrow-btn" onclick="tapBlast(); nextSlide()">➜</button>
+  </div>
+
+  <!-- JUST A THOUGHT -->
+  <div class="slide">
+    <h2>🌼 Just a Thought</h2>
+    <p class="message">
+      Some people make things easier,<br>
+      just by being around.
+    </p>
+    <button class="arrow-btn" onclick="tapBlast(); nextSlide()">➜</button>
+  </div>
+
+  <!-- ALWAYS REMEMBER -->
+  <div class="slide">
+    <h2>🌼 Always Remember</h2>
+    <p class="message">
+      You deserve good things<br>
+      and peaceful days ahead.
+    </p>
+    <button class="arrow-btn" onclick="tapBlast(); nextSlide()">➜</button>
+  </div>
+
+  <!-- FINAL -->
+  <div class="slide">
+    <h1 class="final-title">Happiest Birthday Shipra 🎉</h1>
+    <p class="final-text">
+      Stay Happy . Keep Smilling💛<br>
+      <span style="font-size:16px; opacity:0.7;">Devansh</span>
+    </p>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
